@@ -21,13 +21,33 @@ html {
 
 .movie-title {
     text-transform: uppercase;
+    /*add for animation*/
+    position:relative;
+    left: -55rem;
+    animation: slide-from-left 3s ease-in-out forwards;
+}
+
+@keyframes slide-from-left{
+    80% {left: 2rem;}
+    100%{left: 0;}
+
 }
 
 .movie-poster-container img {
     margin-top: 2rem;
     height: 500px;
     border-radius: 15px;
+    /*add for animation*/
+    position:relative;
+    left: -55rem;
+    animation: slide-from-left 5s ease-in-out forwards;
 }
+
+@keyframes slide-from-left{
+    80% {left: 2rem;}
+    100%{left: 0;}
+}
+
 
 .movie-rating {
     display:inline-block;
@@ -56,7 +76,16 @@ html {
 .movie-info-overview-title {
     text-transform: capitalize;
     letter-spacing: 0.1rem;
+     /*add for animation*/
+     position:relative;
+     left: 55rem;
+     animation: slide-from-left 3s ease-in-out forwards;
+ }
+ 
+ @keyframes slide-from-left{ 
+     100%{left: 0;}
 }
+
 
 .movie-info-actions {
     font-size:1.1rem;
@@ -86,7 +115,16 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
+     /*add for animation*/
+     position:relative;
+     bottom: 55rem;
+     animation: slide-from-bottom 2s ease-in-out forwards;
 }
+
+@keyframes slide-from-bottom{
+    100%{bottom: 0;}
+}
+
 
 footer {
     margin-top: 2rem;
@@ -104,6 +142,8 @@ footer ul li {
     margin-right: 2rem;
     margin-bottom: 2rem;
 }
+
+    
 
 footer ul li a {
     font-size: 1.5rem;
